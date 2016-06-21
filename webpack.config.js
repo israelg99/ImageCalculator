@@ -2,6 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
 
+
 module.exports = {
   devtool: 'source-map',
   debug: true,
@@ -12,7 +13,7 @@ module.exports = {
       'reflect-metadata',
       '@angular/core'
     ],
-    'app': './app/app/app'
+    'app': './app/app/app.bootstrap.ts'
   },
 
   output: {
